@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Generic Survey</h1>
+    <p id="description">This survey intends to collect basic data about participants using a gender-inclusive form.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Demographic data</legend>
+      <label
+        for="name"
+        id="name-label"
+      >
+        Name:
+      </label>
+      <input
+        required
+        type="text"
+        id="name"
+        placeholder="Jordan Doe"
+      />
+      <br />
+      <label
+        for="email"
+        id="email-label"
+      >
+        Email:
+      </label>
+      <input
+        required
+        type="email"
+        id="email"
+        placeholder="example@gmail.com"
+      />
+      <br />
+      <label
+        for="number"
+        id="number-label">
+        Age:
+      </label>
+      <input
+        type="number"
+        id="number"
+        min="1"
+        max="100"
+        placeholder="25"
+      />
+      <br />
+      <label for="dropdown">Gender:</label>
+      <select id="dropdown">
+        <option id="agender">Agender</option>
+        <option id="ambigender">Ambigender</option>
+        <option id="bigender">Bigender</option>
+        <option id="cis-female">Cisgender Female</option>
+        <option id="cis-male">Cisgender Male</option>
+        <option id="demi-girl">Demi-girl</option>
+        <option id="demi-boy">Demi-boy</option>
+        <option id="genderflux">Genderflux</option>
+        <option id="genderqueer">Genderqueer</option>
+        <option id="intersex">Intersex</option>
+        <option id="non-binary">Non-binary</option>
+        <option id="transfeminine">Transfeminine</option>
+        <option id="trans-female">Transgender Female</option>
+        <option id="trans-male">Transgender Male</option>
+        <option id="transmascule">Transmasculine</option>
+        <option id="self-describe">Not listed here :(</option>
+      </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Did you like this survey?</legend>
+      <label for="yes">Yes
+      </label>
+      <input
+        type="radio"
+        id="yes"
+        name="yes-no"
+        value="yes"
+      />
+      <label for="no">No
+      </label>
+      <input
+        type="radio"
+        id="no"
+        name="yes-no"
+        value="no"
+      />
+      <br />
+      <label for="take-again">Would you take this survey again?</label>
+      <input
+        type="checkbox"
+        id="take-again"
+        value="take-again"
+      />
+      <br />
+      <label for="recommend">Would you recommend this survey to a friend?</label>
+      <input
+        type="checkbox"
+        id="recommend"
+        value="recommend"
+      />
+      <br /> 
+      <label for="comments">Any comments?</label>
+      <textarea
+        id="comments"
+        rows="3"
+        cols="30">
+      </textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
